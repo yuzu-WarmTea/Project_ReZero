@@ -1,0 +1,44 @@
+# Visual Studio files
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Unreal Engine files
+Saved/
+Intermediate/
+DerivedDataCache/
+.vscode/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# Binary Files
+Binaries/
+Build/
+
+# Rider IDE files
+.idea/
+*.csproj.DotSettings
+*.csproj.user
+
+# Don't ignore these files
+!Build/*/
+!Build/*/PakBlacklist*.txt
+
+# Other project files
+*.uproject
+!*.uproject
+
+# Plugin source
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+Plugins/*/Source/*/*.lib
