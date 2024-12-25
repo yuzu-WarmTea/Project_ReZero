@@ -3,6 +3,7 @@
 
 #include "Project_ReZero/Public/Characters/RPGCharacterBase.h"
 #include "AttributeSet.h"
+#include "Attributes/RPGAttributeSet.h"
 #include "AbilitySystemComponent.h"
 
 /*
@@ -23,7 +24,7 @@ ARPGCharacterBase::ARPGCharacterBase()
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
 	// Create the attribute set
-	AttributeSet = CreateDefaultSubobject<UAttributeSet>(TEXT("AttributeSet"));
+	AttributeSet = CreateDefaultSubobject<URPGAttributeSet>(TEXT("AttributeSet"));
 }
 
 void ARPGCharacterBase::BeginPlay()

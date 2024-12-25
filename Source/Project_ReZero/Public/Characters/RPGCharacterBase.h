@@ -16,6 +16,7 @@ class UGameplayEffect;
 class UGameplayAbility;
 class UAbilitySystemComponent;
 class UAttributeSet;
+class URPGAttributeSet;
 
 
 UCLASS()
@@ -30,7 +31,7 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 	// Getter for my AttributeSet
-	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
+	URPGAttributeSet* GetAttributeSet() const { return AttributeSet; }
 
 protected:
 	virtual void BeginPlay() override;
@@ -41,7 +42,7 @@ protected:
 
 	// My AttributeSet containing main attributes such as health, mana etc.
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Abilities")
-	UAttributeSet* AttributeSet;
+	URPGAttributeSet* AttributeSet;
 
 	// Called when character spawns to give abilities if need
 	virtual void InitializeAbilities();
