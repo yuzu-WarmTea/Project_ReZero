@@ -20,6 +20,7 @@ DerivedDataCache/
 *.suo
 *.xcodeproj
 *.xcworkspace
+Content/STF
 
 # Binary Files
 Binaries/
