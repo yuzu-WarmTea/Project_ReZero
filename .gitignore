@@ -21,6 +21,7 @@ DerivedDataCache/
 *.xcodeproj
 *.xcworkspace
 Content/STF
+Content/AdvancedMagicFX12
 
 # Binary Files
 Binaries/
